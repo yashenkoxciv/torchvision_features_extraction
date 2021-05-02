@@ -13,11 +13,13 @@ class FeaturesExtractor:
 
     def extract_features(self, input_images: list):
         input_batch = self._prepare_input_image(input_images).to(self.device)
-        features = self.model(input_batch)
+        with torch.no_grad():
+            features = self.model(input_batch)
         return features
 
     def extract_features_batch(self, input_batch: torch.Tensor):
-        features = self.model(input_batch)
+        with torch.no_grad():
+            features = self.model(input_batch)
         return features
 
     def _prepare_input_image(self, input_images):
