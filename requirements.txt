@@ -1,0 +1,6 @@
+pillow
+pip
+setuptools
+torch
+torchvision
+wheel

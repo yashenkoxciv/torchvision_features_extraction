@@ -1,0 +1,2 @@
+from .features_extractor import FeaturesExtractor
+from .imagenet import get_imagenet_features_extractor

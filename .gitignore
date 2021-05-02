@@ -1,0 +1,9 @@
+venv/
+dist/
+__pycache__/
+.idea/
+
+.DS_Store
+
+*.egg-info
+*.pyc
